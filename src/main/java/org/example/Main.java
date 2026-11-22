@@ -1,11 +1,11 @@
 package org.example;
+import Q7.Person;
+import java.util.Date;
 
 public class Main {
     static void main(){
-        IO.println(String.format("Hello and welcome!"));
+        Q7.Person p = new Person("Joe", "Bloggs");
+        System.out.println("Person details: " + p);
 
-        for (int i = 1; i <= 5; i++) {
-            IO.println("i = " + i);
-        }
     }
 }
