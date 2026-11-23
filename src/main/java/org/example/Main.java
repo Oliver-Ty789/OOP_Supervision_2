@@ -1,11 +1,14 @@
 package org.example;
+import Q7.Person;
+import Q8.Game;
+
+import java.util.Date;
 
 public class Main {
-    static void main(){
-        IO.println(String.format("Hello and welcome!"));
+    static void main() throws Exception{
 
-        for (int i = 1; i <= 5; i++) {
-            IO.println("i = " + i);
-        }
+        Game game = new Game();
+        game.run();
+
     }
 }
