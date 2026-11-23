@@ -1,6 +1,6 @@
 package Q8;
 
-public record Entry(String name, int numOfGuesses) {
+public record Entry(String name, int numOfGuesses, int level) {
 
     /*
     a single record for one play session,

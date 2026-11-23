@@ -2,24 +2,22 @@ package Q8;
 
 public class Player {
 
-    //
-    private String name;
-    private int numOfGeusses;
+    // name will never change so is immutable
+    private final String name;
+    private int numOfGuesses = 0;
 
-    public Player(String name, int numOfGeusses){
+
+    public Player(String name){
         this.name = name;
-        this.numOfGeusses = numOfGeusses;
     }
 
     public String getName(){
         return name;
     }
-    public void incrementGeusses(){
-        numOfGeusses ++;
+    public void incrementGuesses(){
+        numOfGuesses ++;
     }
-    public int getNumOfGeusses(){
-        return numOfGeusses;
-    }
+    public int getNumOfGuesses(){return numOfGuesses; }
 
 
 }
